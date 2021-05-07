@@ -1,4 +1,4 @@
-from binaryTree import binaryTreeNode
+
 from initTree import init_tree_from_list
 
 def preorder_traverse(node,op_func):
