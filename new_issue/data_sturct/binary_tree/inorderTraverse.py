@@ -10,7 +10,7 @@ def inorder_traverse(node,op_func):
         inorder_traverse(node.right_child,op_func)
 
 
-def inorder_traverse_nonResursion(node,op_func):
+def inorder_traverse_nonRecursion(node,op_func):
     stack = []
     root = node
     while len(stack) != 0 or root != None:
@@ -27,4 +27,4 @@ if __name__ == "__main__":
     root_node = init_tree_from_list(test_list)
     def visit(node):
         print node.value
-    inorder_traverse_nonResursion(root_node,visit)
+    inorder_traverse_nonRecursion(root_node,visit)
